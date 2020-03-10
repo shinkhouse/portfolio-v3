@@ -1,0 +1,176 @@
+body {
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+}
+/* ------- Toolbar CSS ------- */
+md-toolbar.md-primary {
+  min-height: 0;
+  margin: 0;
+  background-color: #2196F3;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+
+.headerImg {
+  width: 110px;
+  height: 28px;
+  background: url('/images/shinkhouse.png') 0px 0px;
+  background-size: 110px 56px;
+  z-index: 99;
+  cursor: pointer;
+}
+/* ------- Sidenav CSS ------- */
+md-sidenav {
+  width: 300px;
+  height: 100%;
+  background-color: #424242;
+  padding-top: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.navbutton {
+  font-family: 'Cairo', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: left;
+  font-size: 17px;
+  color: #FFFFFF;
+  border-radius: 0;
+  margin: 6px 0px;
+  padding-left: 30px;
+  min-width: 300px;
+}
+
+.navbutton .material-icons {
+  position: relative;
+  color: white;
+  top: 6px;
+}
+/* ------- Contact Card CSS ------- */
+.card-image {
+  border-radius: 9999px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+
+}
+/* ------- Content/Post CSS ------- */
+md-content {
+  background-color: #FFFFFF;
+  color: black;
+  height: 100%;
+  display: flex;
+}
+
+.contentPadding {
+  padding: 20px;
+}
+
+.postTitle {
+  display: table;
+  font-family: 'Roboto Slab', 'Roboto', sans-serif;
+  letter-spacing: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 24px;
+  background-color: #2196F3;
+  font-weight: 700;
+  position: relative;
+  z-index: 3;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.postDate {
+  display: table;
+  font-family: 'Roboto Slab', 'Roboto', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  z-index: 2;
+  font-size: 14px;
+
+  background-color: #1976D2;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+}
+
+.postBorder {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border: 5px solid #2196F3;
+}
+
+.postContent {
+  padding: 15px;
+}
+
+.postContent a {
+  color:  #2196F3;
+font-size: 16px;
+  font-family: 'Roboto Slab', 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+.postContent a:hover {
+  color:  #1A77C0;
+  font-family: 'Roboto Slab', 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+
+
+/* ------- Blockquote CSS ------- */
+blockquote {
+   border-left: 15px solid #2196F3;
+   padding: 10px;
+   color: black;
+   background-color: #F5F5F5;
+}
+
+blockquote cite {
+/*color: #E0E0E0;*/
+color: #999999;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+
+blockquote cite:before {
+content: "\2014 \2009";
+}
+
+/* ------- Blockquote CSS ------- */
+figure {
+  margin: 0;
+  padding: 0;
+
+}
+figure img {
+
+}
+
+figure figcaption::before {
+  content: "Caption: ";
+}
+
+/* ------- Footer CSS ------- */
+footer {
+  min-height: 220px;
+  background-color: #2196F3;
+  color: white;
+  bottom: 0;
+}
+
+@media screen and (max-width: 456px) {
+md-sidenav {
+    width: 240px;
+    min-width: 220px;
+    max-width: 220px;
+}
+}
